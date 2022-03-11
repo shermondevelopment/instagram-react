@@ -1,4 +1,5 @@
 import React from 'react'
+import Aside from '../Aside/Aside'
 import Story from '../Story/Story'
 
 const Feed = () => {
@@ -592,128 +593,7 @@ const Feed = () => {
           </div>
         </div>
       </div>
-      <aside className="main__content_right">
-        <div className="main__infos">
-          <img src="assets/_img/profile.svg" alt=""/>
-          <div className="main__names">
-            <a href="/#" className="main__title">catanacomics</a>
-            <a href="/#" className="main__subtitle">Catana</a>
-          </div>
-        </div>
-        <div className="main__content_body">
-          <div className="main__content_body_top">
-            <span className="suggestions">Sugestões para você</span>
-            <a href="/#" className="see__it_all">Ver tudo</a>
-          </div>
-          <div className="followers">
-            <div className="followers__area">
-              <div className="followers__profile">
-                <img src="https://capricho.abril.com.br/wp-content/uploads/2017/11/gizele-oliveira-victorias-secret.png"
-                  alt="follow" />
-              </div>
-              <div class="followers__info">
-                <a href="/#">brunas2_12</a>
-                <span>Segue você</span>
-              </div>
-              <div class="followers__follow">
-                <a href="/#" class="follow">Seguir</a>
-              </div>
-            </div>
-            <div class="followers__area">
-              <div class="followers__profile">
-                <img src="https://www.areavip.com.br/wp-content/uploads/2021/05/julia-byrro.jpg" alt="follow" />
-              </div>
-              <div class="followers__info">
-                <a href="/#">vanessa_mendes</a>
-                <span>Segue você</span>
-              </div>
-              <div class="followers__follow">
-                <a href="/#" class="follow">Seguir</a>
-              </div>
-            </div>
-            <div class="followers__area">
-              <div class="followers__profile">
-                <img
-                  src="http://s2.glbimg.com/Ih0dl27vqcSWW0ddPKt4Qijr-YE=/e.glbimg.com/og/ed/f/original/2017/11/21/kendall-jenner.jpg"
-                  alt="follow" />
-              </div>
-              <div class="followers__info">
-                <a href="/#">fernanda_silva</a>
-                <span>Segue você</span>
-              </div>
-              <div class="followers__follow">
-                <a href="/#" class="follow">Seguir</a>
-              </div>
-            </div>
-            <div class="followers__area">
-              <div class="followers__profile">
-                <img
-                  src="https://lightroombrasil.com.br/wp-content/uploads/2018/08/417af249516a182cec4b6c098b09fa86-1024x1024.jpg"
-                  alt="follow" />
-              </div>
-              <div class="followers__info">
-                <a href="/#">juliana_gomes</a>
-                <span>Segue você</span>
-              </div>
-              <div class="followers__follow">
-                <a href="/#" class="follow">Seguir</a>
-              </div>
-            </div>
-            <div class="followers__area">
-              <div class="followers__profile">
-                <img
-                  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS6OBra0BSAzMp1p7lkYb1kpJVeW4tg9Tnadw&usqp=CAU"
-                  alt="follow" />
-              </div>
-              <div class="followers__info">
-                <a href="/#">gabriela_2@silva</a>
-                <span>Segue você</span>
-              </div>
-              <div class="followers__follow">
-                <a href="/#" class="follow">Seguir</a>
-              </div>
-            </div>
-          </div>
-          <nav class="navigation">
-            <ul>
-              <li>
-                <a href="/#">Sobre</a>
-              </li>
-              <li>
-                <a href="/#">Ajuda</a>
-              </li>
-              <li>
-                <a href="/#">Imprensa</a>
-              </li>
-              <li>
-                <a href="/#">API</a>
-              </li>
-              <li>
-                <a href="/#">Carreiras</a>
-              </li>
-              <li>
-                <a href="/#">Privacidade</a>
-              </li>
-              <li>
-                <a href="/#">Termos</a>
-              </li>
-              <li>
-                <a href="/#">Localizações</a>
-              </li>
-              <li>
-                <a href="/#">Contas mais relevantes</a>
-              </li>
-              <li>
-                <a href="/#">Hastags</a>
-              </li>
-              <li>
-                <a href="/#">Idioma</a>
-              </li>
-            </ul>
-          </nav>
-          <p class="copyright">© 2021 INSTAGRAM DO FACEBOOK</p>
-        </div>
-      </aside>
+      <Aside />
     </section>
   </main>
     </>
