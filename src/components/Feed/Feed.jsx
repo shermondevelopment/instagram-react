@@ -1,4 +1,5 @@
 import React from 'react'
+import Story from '../Story/Story'
 
 const Feed = () => {
   return (
@@ -16,135 +17,18 @@ const Feed = () => {
               </svg>
             </div>
             <ul className="list">
-              <li>
-                <div className="story">
-                  <div className="story__content">
-                    <div className="story__figure">
-                      <img
-                        src="https://capricho.abril.com.br/wp-content/uploads/2017/11/gizele-oliveira-victorias-secret.png"
-                        className="profile__figure" alt="people" />
-                    </div>
-                  </div>
-                </div>
-                <span className="story__user">fernanda_032fn</span>
-              </li>
-              <li>
-                <div className="story">
-                  <div className="story__content">
-                    <div className="story__figure">
-                      <img
-                        src="https://www.ofuxico.com.br/img/galeria/2020/07/leticia-longati-e-uma-das-modelos-mais-requisitadas-no-bras_437688.jpg"
-                        className="profile__figure" alt="people" />
-                    </div>
-                  </div>
-                </div>
-                <span className="story__user">fernanda_032fn</span>
-              </li>
-              <li>
-                <div className="story">
-                  <div className="story__content">
-                    <div className="story__figure">
-                      <img
-                        src="https://s2.glbimg.com/0CL7qaimA_NGc5IYZPcd4U8bIs4=/e.glbimg.com/og/ed/f/original/2022/01/10/231660293_792270958107975_7509426651353871895_n.jpg"
-                        className="profile__figure" alt="people" />
-                    </div>
-                  </div>
-                </div>
-                <span className="story__user">fernanda_032fn</span>
-              </li>
-              <li>
-                <div className="story">
-                  <div className="story__content">
-                    <div className="story__figure">
-                      <img
-                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS6OBra0BSAzMp1p7lkYb1kpJVeW4tg9Tnadw&usqp=CAU"
-                        className="profile__figure" alt="people" />
-                    </div>
-                  </div>
-                </div>
-                <span className="story__user">fernanda_032fn</span>
-              </li>
-              <li>
-                <div className="story">
-                  <div className="story__content">
-                    <div className="story__figure">
-                      <img src="https://i.pinimg.com/originals/3f/2c/ee/3f2cee9f5ddc042dbf9086051ef465fa.jpg"
-                        className="profile__figure" alt="people" />
-                    </div>
-                  </div>
-                </div>
-                <span className="story__user">fernanda_032fn</span>
-              </li>
-              <li>
-                <div className="story">
-                  <div className="story__content">
-                    <div className="story__figure">
-                      <img
-                        src="https://lightroombrasil.com.br/wp-content/uploads/2018/08/417af249516a182cec4b6c098b09fa86-1024x1024.jpg"
-                        className="profile__figure" alt="people" />
-                    </div>
-                  </div>
-                </div>
-                <span className="story__user">fernanda_032fn</span>
-              </li>
-              <li>
-                <div className="story">
-                  <div className="story__content">
-                    <div className="story__figure">
-                      <img
-                        src="http://s2.glbimg.com/Ih0dl27vqcSWW0ddPKt4Qijr-YE=/e.glbimg.com/og/ed/f/original/2017/11/21/kendall-jenner.jpg"
-                        className="profile__figure" alt="people" />
-                    </div>
-                  </div>
-                </div>
-                <span className="story__user">fernanda_032fn</span>
-              </li>
-              <li>
-                <div className="story">
-                  <div className="story__content">
-                    <div className="story__figure">
-                      <img
-                        src="https://capricho.abril.com.br/wp-content/uploads/2017/11/gizele-oliveira-victorias-secret.png"
-                        className="profile__figure" alt="people" />
-                    </div>
-                  </div>
-                </div>
-                <span className="story__user">fernanda_032fn</span>
-              </li>
-              <li>
-                <div className="story">
-                  <div className="story__content">
-                    <div className="story__figure">
-                      <img src="https://www.areavip.com.br/wp-content/uploads/2021/05/julia-byrro.jpg"
-                        className="profile__figure" alt="people" />
-                    </div>
-                  </div>
-                </div>
-                <span className="story__user">fernanda_032fn</span>
-              </li>
-              <li>
-                <div className="story">
-                  <div className="story__content">
-                    <div className="story__figure">
-                      <img src="https://www.areavip.com.br/wp-content/uploads/2021/05/julia-byrro.jpg"
-                        className="profile__figure" alt="people" />
-                    </div>
-                  </div>
-                </div>
-                <span className="story__user">fernanda_032fn</span>
-              </li>
-              <li>
-                <div className="story">
-                  <div className="story__content">
-                    <div className="story__figure">
-                      <img
-                        src="https://capricho.abril.com.br/wp-content/uploads/2017/11/gizele-oliveira-victorias-secret.png"
-                        className="profile__figure" alt="people" />
-                    </div>
-                  </div>
-                </div>
-                <span className="story__user">fernanda_032fn</span>
-              </li>
+              <Story image="https://capricho.abril.com.br/wp-content/uploads/2017/11/gizele-oliveira-victorias-secret.png" />
+              <Story image="https://www.ofuxico.com.br/img/galeria/2020/07/leticia-longati-e-uma-das-modelos-mais-requisitadas-no-bras_437688.jpg" />
+              <Story image="https://s2.glbimg.com/0CL7qaimA_NGc5IYZPcd4U8bIs4=/e.glbimg.com/og/ed/f/original/2022/01/10/231660293_792270958107975_7509426651353871895_n.jpg" />
+              <Story image="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS6OBra0BSAzMp1p7lkYb1kpJVeW4tg9Tnadw&usqp=CAU" />
+              <Story image="https://i.pinimg.com/originals/3f/2c/ee/3f2cee9f5ddc042dbf9086051ef465fa.jpg" />
+              <Story image="https://lightroombrasil.com.br/wp-content/uploads/2018/08/417af249516a182cec4b6c098b09fa86-1024x1024.jpg" />
+              <Story image="http://s2.glbimg.com/Ih0dl27vqcSWW0ddPKt4Qijr-YE=/e.glbimg.com/og/ed/f/original/2017/11/21/kendall-jenner.jpg" />
+              <Story image="http://s2.glbimg.com/Ih0dl27vqcSWW0ddPKt4Qijr-YE=/e.glbimg.com/og/ed/f/original/2017/11/21/kendall-jenner.jpg" />
+              <Story image="https://capricho.abril.com.br/wp-content/uploads/2017/11/gizele-oliveira-victorias-secret.png" />
+              <Story image="https://www.areavip.com.br/wp-content/uploads/2021/05/julia-byrro.jpg" />
+              <Story image="https://www.areavip.com.br/wp-content/uploads/2021/05/julia-byrro.jpg" />
+              <Story image="https://capricho.abril.com.br/wp-content/uploads/2017/11/gizele-oliveira-victorias-secret.png" />
             </ul>
             <div className="arrow">
               <svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
