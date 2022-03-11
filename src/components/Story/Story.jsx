@@ -1,19 +1,19 @@
 import React  from "react";
 
 
-const Story = ({ image }) => {
+const Story = ({ avatar, name }) => {
   return (
     <li>
       <div className="story">
         <div className="story__content">
           <div className="story__figure">
             <img
-              src={image}
+              src={avatar}
               className="profile__figure" alt="people" />
           </div>
         </div>
         </div>
-      <span className="story__user">fernanda_032fn</span>
+      <span className="story__user">{name}</span>
     </li>
   )
 }

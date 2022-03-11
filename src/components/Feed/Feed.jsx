@@ -2,6 +2,20 @@ import React from 'react'
 import Story from '../Story/Story'
 
 const Feed = () => {
+
+  const users = [
+    {name: 'maria@s2', avatar: 'https://capricho.abril.com.br/wp-content/uploads/2017/11/gizele-oliveira-victorias-secret.png'}, 
+    {name: 'julia_as', avatar: 'https://www.ofuxico.com.br/img/galeria/2020/07/leticia-longati-e-uma-das-modelos-mais-requisitadas-no-bras_437688.jpg'}, 
+    {name: 'gabriela_dshd', avatar: 'https://s2.glbimg.com/0CL7qaimA_NGc5IYZPcd4U8bIs4=/e.glbimg.com/og/ed/f/original/2022/01/10/231660293_792270958107975_7509426651353871895_n.jpg'}, 
+    {name: '@juliana_mirella', avatar: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS6OBra0BSAzMp1p7lkYb1kpJVeW4tg9Tnadw&usqp=CAU'}, 
+    {name: '@priscilla@gdsa', avatar: 'https://i.pinimg.com/originals/3f/2c/ee/3f2cee9f5ddc042dbf9086051ef465fa.jpg'}, 
+    {name: 'agatha_silva', avatar: 'https://lightroombrasil.com.br/wp-content/uploads/2018/08/417af249516a182cec4b6c098b09fa86-1024x1024.jpg'}, 
+    {name: '@roberta_basto', avatar: 'http://s2.glbimg.com/Ih0dl27vqcSWW0ddPKt4Qijr-YE=/e.glbimg.com/og/ed/f/original/2017/11/21/kendall-jenner.jpg'}, 
+    {name: 'jennify_123', avatar: 'http://s2.glbimg.com/Ih0dl27vqcSWW0ddPKt4Qijr-YE=/e.glbimg.com/og/ed/f/original/2017/11/21/kendall-jenner.jpg'}, 
+    {name: 'beatrizz', avatar: 'https://capricho.abril.com.br/wp-content/uploads/2017/11/gizele-oliveira-victorias-secret.png'}, 
+    {name: 'luana', avatar: 'https://capricho.abril.com.br/wp-content/uploads/2017/11/gizele-oliveira-victorias-secret.png'}
+  ]
+
   return (
     <>
     <main className="main">
@@ -17,18 +31,9 @@ const Feed = () => {
               </svg>
             </div>
             <ul className="list">
-              <Story image="https://capricho.abril.com.br/wp-content/uploads/2017/11/gizele-oliveira-victorias-secret.png" />
-              <Story image="https://www.ofuxico.com.br/img/galeria/2020/07/leticia-longati-e-uma-das-modelos-mais-requisitadas-no-bras_437688.jpg" />
-              <Story image="https://s2.glbimg.com/0CL7qaimA_NGc5IYZPcd4U8bIs4=/e.glbimg.com/og/ed/f/original/2022/01/10/231660293_792270958107975_7509426651353871895_n.jpg" />
-              <Story image="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS6OBra0BSAzMp1p7lkYb1kpJVeW4tg9Tnadw&usqp=CAU" />
-              <Story image="https://i.pinimg.com/originals/3f/2c/ee/3f2cee9f5ddc042dbf9086051ef465fa.jpg" />
-              <Story image="https://lightroombrasil.com.br/wp-content/uploads/2018/08/417af249516a182cec4b6c098b09fa86-1024x1024.jpg" />
-              <Story image="http://s2.glbimg.com/Ih0dl27vqcSWW0ddPKt4Qijr-YE=/e.glbimg.com/og/ed/f/original/2017/11/21/kendall-jenner.jpg" />
-              <Story image="http://s2.glbimg.com/Ih0dl27vqcSWW0ddPKt4Qijr-YE=/e.glbimg.com/og/ed/f/original/2017/11/21/kendall-jenner.jpg" />
-              <Story image="https://capricho.abril.com.br/wp-content/uploads/2017/11/gizele-oliveira-victorias-secret.png" />
-              <Story image="https://www.areavip.com.br/wp-content/uploads/2021/05/julia-byrro.jpg" />
-              <Story image="https://www.areavip.com.br/wp-content/uploads/2021/05/julia-byrro.jpg" />
-              <Story image="https://capricho.abril.com.br/wp-content/uploads/2017/11/gizele-oliveira-victorias-secret.png" />
+              {users.map( item => (
+                <Story avatar={item.avatar} name={item.name} />
+              ) )}
             </ul>
             <div className="arrow">
               <svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
