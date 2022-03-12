@@ -1,7 +1,7 @@
 import React from 'react'
 import ProfileSuggestion from '../ProfileSuggestion/ProfileSuggestion'
 
-const Aside = () => {
+const Aside = ({ name, avatar, subtitle }) => {
 
   const users = [
     {name: 'maria@s2', avatar: 'https://capricho.abril.com.br/wp-content/uploads/2017/11/gizele-oliveira-victorias-secret.png'}, 
@@ -15,10 +15,10 @@ const Aside = () => {
   return (
     <aside className="main__content_right">
     <div className="main__infos">
-      <img src="app/_image/profile.svg" alt=""/>
+      <img src={avatar} alt=""/>
       <div className="main__names">
-        <a href="/#" className="main__title">catanacomics</a>
-        <a href="/#" className="main__subtitle">Catana</a>
+        <a href="/#" className="main__title">{name}</a>
+        <a href="/#" className="main__subtitle">{subtitle}</a>
       </div>
     </div>
     <div className="main__content_body">
